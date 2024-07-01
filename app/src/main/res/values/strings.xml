@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Task2</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_frg">Home</string>
+    <string name="set_frg">Setting</string>
+    <string name="email_frg">Email</string>
+    <string name="car_frg">Car</string>
+    <string name="doc_frg">Doc</string>
+    <string name="input_text_panel">Введите ваше имя пользователя</string>
+    <string name="button">Отправить</string>
+
+</resources>

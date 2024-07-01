@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.task2.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment2_to_settingsFragment"
+            app:destination="@id/SettingsFragment" />
+        <action
+            android:id="@+id/action_mainFragment2_to_emailFragment"
+            app:destination="@id/EmailFragment" />
+        <action
+            android:id="@+id/action_mainFragment2_to_carFragment"
+            app:destination="@id/CarFragment" />
+        <action
+            android:id="@+id/action_mainFragment2_to_documentFragment"
+            app:destination="@id/DocumentFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_textOutputFragment"
+            app:destination="@id/textOutputFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:name="com.example.task2.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/EmailFragment"
+        android:name="com.example.task2.EmailFragment"
+        android:label="fragment_email"
+        tools:layout="@layout/fragment_email" />
+    <fragment
+        android:id="@+id/CarFragment"
+        android:name="com.example.task2.CarFragment"
+        android:label="fragment_car"
+        tools:layout="@layout/fragment_car" />
+    <fragment
+        android:id="@+id/DocumentFragment"
+        android:name="com.example.task2.DocumentFragment"
+        android:label="fragment_document"
+        tools:layout="@layout/fragment_document" />
+    <fragment
+        android:id="@+id/textOutputFragment"
+        android:name="com.example.task2.TextOutputFragment"
+        android:label="fragment_text_output"
+        tools:layout="@layout/fragment_text_output" />
+</navigation>

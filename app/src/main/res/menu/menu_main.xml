@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/main_frg" />
+    <item
+        android:id="@+id/SettingsFragment"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="@string/set_frg" />
+    <item
+        android:id="@+id/EmailFragment"
+        android:icon="@drawable/baseline_email_24"
+        android:title="@string/email_frg" />
+
+    <item
+        android:id="@+id/CarFragment"
+        android:icon="@drawable/baseline_directions_car_24"
+        android:title="@string/car_frg" />
+    <item
+        android:id="@+id/DocumentFragment"
+        android:icon="@drawable/baseline_document_scanner_24"
+        android:title="@string/doc_frg" />
+</menu>
