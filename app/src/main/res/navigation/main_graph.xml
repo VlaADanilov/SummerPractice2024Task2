@@ -44,7 +44,11 @@
         android:id="@+id/CarFragment"
         android:name="com.example.task2.CarFragment"
         android:label="fragment_car"
-        tools:layout="@layout/fragment_car" />
+        tools:layout="@layout/fragment_car" >
+        <action
+            android:id="@+id/action_CarFragment_to_infoFragment2"
+            app:destination="@id/infoFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/DocumentFragment"
         android:name="com.example.task2.DocumentFragment"
@@ -55,4 +59,13 @@
         android:name="com.example.task2.TextOutputFragment"
         android:label="fragment_text_output"
         tools:layout="@layout/fragment_text_output" />
+    <fragment
+        android:id="@+id/infoFragment2"
+        android:name="com.example.task2.InfoFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/action_infoFragment2_to_CarFragment"
+            app:destination="@id/CarFragment" />
+    </fragment>
 </navigation>
